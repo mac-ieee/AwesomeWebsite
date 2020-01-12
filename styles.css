@@ -1,0 +1,245 @@
+/*CSS*/
+
+/*Global*/
+*,
+*::before,
+*::after{
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	font-size: 10px;
+	font-family: 'SF Pro Display', sans-serif; /*download font?*/
+	overflow-x: hidden;
+}
+
+a{
+	display: block;
+	text-decoration: none;
+}
+
+.container{
+	max-width: 98rem;
+	margin: 0 auto;
+	padding: 0 2.2rem;
+}
+
+/*HEADER*/
+header{
+	position: fixed;
+	top: 0;
+	z-index: 1400;
+	width: 100%;
+	height: 4.4rem;
+	background-color: rgba(0,0,0,.8);
+	background-filter: blur(2rem); /*slightly transparent*/
+}
+
+.nav-list{
+	width: 100%;
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-left: 25%;
+	margin-right: 25%;
+}
+
+.nav-list-mobile{
+	/*don't show menu on mobile*/
+	display: none;
+}
+
+.nav-link{
+	font-size: 1.4rem;
+	color: #d3d3d3;
+	padding: 0 1rem;
+	transition: 0.7s; /*hover effect on text*/
+}
+.nav-link:hover{
+	color: white;
+}
+
+.nav-link-apple{
+	width: 1.6rem;
+	height: 4.4rem;
+	background: url("images/icons/apple.svg") center no-repeat;
+}
+
+.nav-link-search{
+	width: 1.6rem;
+	height: 4.4rem;
+	background: url("images/icons/search.svg") center no-repeat;
+}
+
+.nav-link-bag{
+	width: 1.4rem;
+	height: 4.4rem;
+	background: url("images/icons/bag.svg") center no-repeat;
+}
+
+
+/*HIGHLIGHT*/
+.cover{
+	/*apply brightness-filter on backdrop*/
+	/*background: url("images/hero/iphone-11-pro/iphone_11_pro_large.jpg");*/
+	background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("images/elevator.webp"), repeat-x;
+	/*https://randomghost.tumblr.com/post/61362612686/electro-soma-mindspace-i-may-have-a-new-user*/
+	margin-top: 0rem; /*place image below nav*/
+}
+
+.card-deck{
+	padding-left: 4rem;
+	padding-right: 3rem;
+	padding-bottom: 3rem;
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.second-card{
+	margin-left: 0rem;
+}
+
+.card-title{
+	text-align: center;
+	padding-top: 7rem;
+	font-size: 2rem;
+}
+.cover-card-title{
+	text-align: center;
+	padding-top: 5rem;
+	font-size: 1.5rem;
+}
+.card-text{
+	text-align: center;
+	height: 10rem;
+}
+
+.card-img-top{
+	filter: opacity(8%) saturate(0%);
+	margin-top: 10rem;
+	height: 15rem;
+}
+
+.title{
+	color: #fff;
+	text-align: center;
+	padding-top: 5.5rem;
+}
+
+.cover-title{
+	padding-top: 15rem;
+}
+
+.title-heading{
+	font-size: 5.6rem;
+	line-height: 1.07143;
+	letter-spacing: -0.005rem;
+}
+
+.title-sub-heading{
+	font-size: 2.65rem;
+	margin-top: .6rem;
+	letter-spacing: .008rem;
+	font-weight: 400;
+}
+
+.cover-sub-heading{
+	font-size: 3rem;
+	color: white;
+}
+
+.title-price{
+	font-size: 1.7rem;
+	color: #888;
+	margin-top: .68rem;
+}
+
+.cta{
+	text-align: center;
+	margin-top: 1.8rem;
+}
+
+.cta-link{
+	color: #66bbff;
+	font-size: 1.8rem;
+	display: inline-block;
+}
+
+.cta-link:nth-child(2){
+	margin-left: 2.6rem;
+}
+
+.cta-link:hover{
+	border-bottom: #66bbff;
+}
+
+/*Highlight 1 section*/
+.highlight1{
+	background: url("images/hero/iphone-11/iphone_11_large.jpg") center no-repeat;
+}
+
+.highlight2{
+	background: url("images/hero/watch/watch_large.jpg") center no-repeat;
+}
+
+.title-white{
+	color: white;
+}
+
+.title-dark{
+	color: #000;
+}
+
+.cta-link-darker{
+	color: #0070c9;
+}
+.cta-link-darker:hover{
+	border-bottom: #0070c9;
+}
+
+/*Moved to the bottom of all section styles to keep consistent styles*/
+.hero{
+	height: 69.2rem;
+	background-size: auto 73.6rem;
+	background-position: center;
+	background-repeat: none;
+	border-top: .6rem solid #fff;
+	border-bottom: .6rem solid #fff;
+}
+
+.branches{
+	border-top: none;
+	height: 125rem;
+	color: white;
+	background: #6f6f6f;
+}
+
+.branches-line{
+	padding-bottom: 5rem;
+}
+
+.cover{
+	border-top: none; /*get rid of white indent*/
+	border-bottom: none;
+	height: 110rem;
+}/*Moved to the bottom of all section styles to keep consistent styles*/
+
+.cover-card{
+	opacity: 0%;
+	padding-top: 5rem; 
+	height: 15rem;
+	transition: opacity 1s;
+}
+
+.branch-card{
+	opacity: 0%;
+	transition: opacity 2s;
+}
+
+.spacer{
+	padding-top: 10rem;
+}
