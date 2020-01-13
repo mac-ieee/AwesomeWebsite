@@ -14,6 +14,13 @@ html{
 	overflow-x: hidden;
 }
 
+body{
+	height: 100vh;
+	perspective: 1px;
+	transition-style: preserve-3d;
+	overflow-x: hidden;
+}
+
 a{
 	display: block;
 	text-decoration: none;
@@ -84,7 +91,6 @@ header{
 .cover{
 	/*apply brightness-filter on backdrop*/
 	/*background: url("images/hero/iphone-11-pro/iphone_11_pro_large.jpg");*/
-	background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("images/elevator.webp"), repeat-x;
 	/*https://randomghost.tumblr.com/post/61362612686/electro-soma-mindspace-i-may-have-a-new-user*/
 	margin-top: 0rem; /*place image below nav*/
 }
@@ -105,8 +111,9 @@ header{
 
 .card-title{
 	text-align: center;
-	padding-top: 7rem;
-	font-size: 2rem;
+	padding-top: 6rem;
+	font-size: 1.5rem;
+	font-weight: bold;
 }
 .cover-card-title{
 	text-align: center;
@@ -131,13 +138,17 @@ header{
 }
 
 .cover-title{
-	padding-top: 15rem;
+	padding-top: 10rem;
 }
 
 .title-heading{
 	font-size: 5.6rem;
 	line-height: 1.07143;
 	letter-spacing: -0.005rem;
+}
+
+.branch-title-heading{
+	padding-top: 4rem;
 }
 
 .title-sub-heading{
@@ -161,6 +172,7 @@ header{
 .cta{
 	text-align: center;
 	margin-top: 1.8rem;
+	margin-bottom: 10rem;
 }
 
 .cta-link{
@@ -213,9 +225,8 @@ header{
 
 .branches{
 	border-top: none;
-	height: 125rem;
+	height: 100rem;
 	color: white;
-	background: #6f6f6f;
 }
 
 .branches-line{
@@ -228,18 +239,130 @@ header{
 	height: 110rem;
 }/*Moved to the bottom of all section styles to keep consistent styles*/
 
-.cover-card{
-	opacity: 0%;
-	padding-top: 5rem; 
-	height: 15rem;
-	transition: opacity 1s;
+
+.cover-card, .branch-card{
+	opacity: 50%;
+	transition: opacity 2s;
+	background-color: black; 
 }
 
-.branch-card{
-	opacity: 0%;
-	transition: opacity 2s;
+.cover-card:hover, .branch-card:hover{
+	opacity: 80%;
+	transition: opacity 1s;
 }
 
 .spacer{
 	padding-top: 10rem;
 }
+
+.card-subtitle{
+	text-align: center;
+	color: white;
+	font-size: 1rem;
+}
+
+/*PARALLAX*/
+/*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_parallax*/
+.parallax-wrapper{
+	background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url("images/elevator.webp"), repeat-x;
+	min-height: 110rem;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: auto;
+	background-repeat: repeat;
+}
+
+.regular-wrapper{
+	background: black;
+	height: 100rem;
+	z-index: 2;
+	position: regular;
+}
+
+/*
+<!-- card row 1 -->
+			<div class="card-deck">
+			  <div class="branch-card card bg-dark text-white">
+			    <img class="card-img-top" src="https://image.flaticon.com/icons/svg/2279/2279165.svg" alt="Card image cap">
+			    <div class="card-block">
+			      <h4 class="card-title">Biomedical</h4>
+			      <p class="card-text">description</p>
+			    </div>
+			  </div>
+
+			  <div class="branch-card card second-card bg-dark text-white">
+			    <img class="card-img-top" src="https://image.flaticon.com/icons/svg/2279/2279180.svg" alt="Card image cap">
+			    <div class="card-block">
+			      <h4 class="card-title">Main</h4>
+			      <p class="card-text">description</p>
+			    </div>
+			  </div>
+			</div>
+			<!-- card row 1 end -->
+
+			<!-- card row 2 -->
+			<div class="card-deck">
+			  <div class="branch-card card bg-dark text-white">
+			    <img class="card-img-top" src="https://image.flaticon.com/icons/svg/2279/2279165.svg" alt="Card image cap">
+			    <div class="card-block">
+			      <h4 class="card-title">Power</h4>
+			      <p class="card-text">description</p>
+			    </div>
+			  </div>
+
+			  <div class="branch-card card second-card bg-dark text-white">
+			    <img class="card-img-top" src="https://image.flaticon.com/icons/svg/2279/2279180.svg" alt="Card image cap">
+			    <div class="card-block">
+			      <h4 class="card-title">Computer</h4>
+			      <p class="card-text">description</p>
+			    </div>
+			  </div>
+			</div>
+			<!-- card-row 2 end -->
+
+			
+			</div>
+			<!-- carousel end -->
+*/
+
+
+
+/*
+<div class="spacer card-deck">
+			  <div class="card rounded cover-card bg-dark text-white" style="width:20%">
+			    <!-- <img class="card-img" src="https://images.unsplash.com/photo-1551509134-eb7c5ea9ad2d?ixlib=rb-1.2.1&w=1000&q=80" alt="Card image cap"> -->
+			    <div class="card-img-overlay">
+			      <h4 class="cover-card-title">Course Kits</h4>
+			      <p class="card-text"> </p>
+			    </div>
+			  </div>
+
+			  <div class="card rounded cover-card bg-dark text-white">
+			    <!-- <img class="card-img" src="https://9to5mac.com/wp-content/uploads/sites/6/2019/09/Dark-B-1.jpg?quality=82&strip=all" alt="Card image cap"> -->
+			    <div class="card-img-overlay">
+			      <h4 class="cover-card-title">Soldering Stations</h4>
+			      <p class="card-text"></p>
+			    </div>
+			  </div>
+			</div>
+			<!-- card row 1 end -->
+
+			<!-- cover cards row 2 -->
+			<div class="card-deck">
+			  <div class="card rounded cover-card bg-dark text-white" style="width:20%">
+			    <!-- <img class="card-img" src="https://images.unsplash.com/photo-1551509134-eb7c5ea9ad2d?ixlib=rb-1.2.1&w=1000&q=80" alt="Card image cap"> -->
+			    <div class="card-img-overlay">
+			      <h4 class="cover-card-title">Course Kits</h4>
+			      <p class="card-text"> </p>
+			    </div>
+			  </div>
+
+			  <div class="card rounded cover-card second-card bg-dark text-white">
+			    <!-- <img class="card-img" src="https://9to5mac.com/wp-content/uploads/sites/6/2019/09/Dark-B-1.jpg?quality=82&strip=all" alt="Card image cap"> -->
+			    <div class="card-img-overlay">
+			      <h4 class="cover-card-title">Soldering Stations</h4>
+			      <p class="card-text"></p>
+			    </div>
+			  </div>
+			</div>
+*/

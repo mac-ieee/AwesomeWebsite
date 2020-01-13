@@ -76,8 +76,8 @@
 		</div>
 	</header>
 
-	<!-- Cover Section (main) -->
-	<div class="parallax">
+	<div class="parallax-wrapper">
+		<!-- Cover Section (main) -->
 		<section class="hero cover">
 			<div class="container">
 				<div class="title cover-title">
@@ -90,137 +90,138 @@
 				<a href="#" class="cta-link">Join Us ></a>
 				<a href="#" class="cta-link">Contact ></a>
 			</div>
-			<!-- cover cards -->
-			<div class="spacer card-deck">
-			  <div class="card rounded cover-card bg-dark text-white" style="width:20%">
-			    <!-- <img class="card-img" src="https://images.unsplash.com/photo-1551509134-eb7c5ea9ad2d?ixlib=rb-1.2.1&w=1000&q=80" alt="Card image cap"> -->
-			    <div class="card-img-overlay">
-			      <h4 class="cover-card-title">Course Kits</h4>
-			      <p class="card-text"> </p>
-			    </div>
-			  </div>
 
-			  <div class="card rounded cover-card bg-dark text-white">
-			    <!-- <img class="card-img" src="https://9to5mac.com/wp-content/uploads/sites/6/2019/09/Dark-B-1.jpg?quality=82&strip=all" alt="Card image cap"> -->
-			    <div class="card-img-overlay">
-			      <h4 class="cover-card-title">Soldering Stations</h4>
-			      <p class="card-text"></p>
-			    </div>
-			  </div>
-			</div>
-			<!-- card row 1 end -->
+			<!-- Highlight Cards (responsive) -->
+			<div class="container-fluid mt-4">
+			    <div class="row justify-content-center">
+			        <div class="col-auto mb-3">
+			            <div class="card cover-card h-100 bg-dark text-light rounded" style="width: 30rem;">
+			                <div class="card-body">
+			                    <h5 class="card-title">Course Kits</h5>
+			                    <h6 class="card-subtitle mb-2">DP, DX, EI</h6>
+			                    <p class="card-text"></p>
+			                    <!-- <a href="#" class="card-link">Card link</a> -->
+			                </div>
+			            </div>
+			        </div>
+			        <div class="col-auto mb-3">
+			            <div class="card cover-card h-100 bg-dark text-light rounded" style="width: 30rem;">
+			                <div class="card-body">
+			                    <h5 class="card-title">Soldering</h5>
+			                    <h6 class="card-subtitle mb-2">Bookings</h6>
+			                    <p class="card-text"></p>
+			                    <!-- <a href="#" class="card-link">Card link</a> -->
+			                </div>
+			            </div>
+			        </div>
+			        <div class="col-auto mb-3">
+			            <div class="card cover-card h-100 bg-dark text-light rounded" style="width: 30rem;">
+			                <div class="card-body">
+			                    <h5 class="card-title">Raspberry Pi</h5>
+			                    <h5 class="card-subtitle mb-2">Workshops</h6>
+			                    <p class="card-text"></p>
+			                    <!-- <a href="#" class="card-link">Card link</a> -->
+			                </div>
+			            </div>
+			        </div>
 
-			<!-- cover cards row 2 -->
-			<div class="card-deck">
-			  <div class="card rounded cover-card bg-dark text-white" style="width:20%">
-			    <!-- <img class="card-img" src="https://images.unsplash.com/photo-1551509134-eb7c5ea9ad2d?ixlib=rb-1.2.1&w=1000&q=80" alt="Card image cap"> -->
-			    <div class="card-img-overlay">
-			      <h4 class="cover-card-title">Course Kits</h4>
-			      <p class="card-text"> </p>
-			    </div>
-			  </div>
-
-			  <div class="card rounded cover-card second-card bg-dark text-white">
-			    <!-- <img class="card-img" src="https://9to5mac.com/wp-content/uploads/sites/6/2019/09/Dark-B-1.jpg?quality=82&strip=all" alt="Card image cap"> -->
-			    <div class="card-img-overlay">
-			      <h4 class="cover-card-title">Soldering Stations</h4>
-			      <p class="card-text"></p>
-			    </div>
-			  </div>
-			</div>
-			<!-- card row 1 end -->
+			</div> <!-- branch cards end -->
 		</section>
+	</div> <!-- parallax end -->
 
-
+	<div class="regular-wrapper">
 		<!-- Branches -->
-		<section class="hero branches">
+		<section class="hero branches regular-wrapper">
 			<div class="container">
 				<div class="title title-white">
-					<h2 class="title-heading">Groups</h2>
+					<h2 class="branch-title-heading title-heading">Groups</h2>
 					<h3 class="title-sub-heading">how we organize internally</h3>
-					<p class="title-price branches-line">you're welcome to join any one(s)</p>
+					<p class="title-price branches-line">you're welcome to either</p>
+				</div>
+			</div>	
+
+			<!-- Branch Cards (responsive) -->
+			<div class="container-fluid mt-4">
+			    <div class="row justify-content-center">
+			        <div class="col-auto mb-3">
+			            <div class="branch-card" style="width: 18rem;">
+			                <div class="card-body">
+			                    <h5 class="card-title">Main</h5>
+			                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+			                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+			                    <a href="#" class="card-link">Card link</a>
+			                    <a href="#" class="card-link">Another link</a>
+			                </div>
+			            </div>
+			        </div>
+			        <div class="col-auto mb-3">
+			            <div class="branch-card" style="width: 18rem;">
+			                <div class="card-body">
+			                    <h5 class="card-title">Biomedical</h5>
+			                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+			                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+			                    <a href="#" class="card-link">Card link</a>
+			                    <a href="#" class="card-link">Another link</a>
+			                </div>
+			            </div>
+			        </div>
+			        <div class="col-auto mb-3">
+			            <div class="branch-card" style="width: 18rem;">
+			                <div class="card-body">
+			                    <h5 class="card-title">Computer</h5>
+			                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+			                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+			                    <a href="#" class="card-link">Card link</a>
+			                    <a href="#" class="card-link">Another link</a>
+			                </div>
+			            </div>
+			        </div>
+			        <div class="col-auto mb-3">
+			            <div class="branch-card" style="width: 18rem;">
+			                <div class="card-body">
+			                    <h5 class="card-title">Power</h5>
+			                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+			                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+			                    <a href="#" class="card-link">Card link</a>
+			                    <a href="#" class="card-link">Another link</a>
+			                </div>
+			            </div>
+			        </div>
+			</div>		
+			<!-- branch cards end -->
+		</section> <!-- Branches End -->
+
+		<!-- Highlight 1 -->
+		<section class="hero highlight1">
+			<div class="container">
+				<div class="title title-dark">
+					<h2 class="title-heading">Upcoming.</h2>
+					<h3 class="title-sub-heading">Just the right amount of everything.</h3>
+					<p class="title-price">From $24.95/mo. or $599 with trade-in.*</p>
 				</div>
 			</div>
-
-			<!-- card row 1 -->
-			<div class="card-deck">
-			  <div class="branch-card card bg-dark text-white">
-			    <img class="card-img-top" src="https://image.flaticon.com/icons/svg/2279/2279165.svg" alt="Card image cap">
-			    <div class="card-block">
-			      <h4 class="card-title">Biomedical</h4>
-			      <p class="card-text">description</p>
-			    </div>
-			  </div>
-
-			  <div class="branch-card card second-card bg-dark text-white">
-			    <img class="card-img-top" src="https://image.flaticon.com/icons/svg/2279/2279180.svg" alt="Card image cap">
-			    <div class="card-block">
-			      <h4 class="card-title">Main</h4>
-			      <p class="card-text">description</p>
-			    </div>
-			  </div>
+			<div class="cta">
+				<a href="#" class="cta-link cta-link-darker">Learn more</a>
+				<a href="#" class="cta-link cta-link-darker">Buy</a>
 			</div>
-			<!-- card row 1 end -->
+		</section> <!-- highlight 1 end -->
 
-			<!-- card row 2 -->
-			<div class="card-deck">
-			  <div class="branch-card card bg-dark text-white">
-			    <img class="card-img-top" src="https://image.flaticon.com/icons/svg/2279/2279165.svg" alt="Card image cap">
-			    <div class="card-block">
-			      <h4 class="card-title">Power</h4>
-			      <p class="card-text">description</p>
-			    </div>
-			  </div>
-
-			  <div class="branch-card card second-card bg-dark text-white">
-			    <img class="card-img-top" src="https://image.flaticon.com/icons/svg/2279/2279180.svg" alt="Card image cap">
-			    <div class="card-block">
-			      <h4 class="card-title">Computer</h4>
-			      <p class="card-text">description</p>
-			    </div>
-			  </div>
+		<!-- Highlight 2 -->
+		<section class="hero highlight2">
+			<div class="container">
+				<div class="title title-dark">
+					<h2 class="title-heading">Computer</h2>
+					<h3 class="title-sub-heading">With the new always-On Retina display.</h3>
+					<p class="title-price">From $24.95/mo. or $599 with trade-in.*</p>
+				</div>
 			</div>
-			<!-- card-row 2 end -->
-
-			
+			<div class="cta">
+				<a href="#" class="cta-link cta-link-darker">Learn more</a>
+				<a href="#" class="cta-link cta-link-darker">Buy</a>
 			</div>
-			<!-- carousel end -->
-		</section>
-	</div>
+		</section> <!-- highlight 2 end -->
 
-	<!-- parallax end -->
-
-	<!-- Highlight 1 -->
-	<section class="hero highlight1">
-		<div class="container">
-			<div class="title title-dark">
-				<h2 class="title-heading">Upcoming.</h2>
-				<h3 class="title-sub-heading">Just the right amount of everything.</h3>
-				<p class="title-price">From $24.95/mo. or $599 with trade-in.*</p>
-			</div>
-		</div>
-		<div class="cta">
-			<a href="#" class="cta-link cta-link-darker">Learn more</a>
-			<a href="#" class="cta-link cta-link-darker">Buy</a>
-		</div>
-
-	
-	</section>
-
-	<!-- Highlight 2 -->
-	<section class="hero highlight2">
-		<div class="container">
-			<div class="title title-dark">
-				<h2 class="title-heading">Computer</h2>
-				<h3 class="title-sub-heading">With the new always-On Retina display.</h3>
-				<p class="title-price">From $24.95/mo. or $599 with trade-in.*</p>
-			</div>
-		</div>
-		<div class="cta">
-			<a href="#" class="cta-link cta-link-darker">Learn more</a>
-			<a href="#" class="cta-link cta-link-darker">Buy</a>
-		</div>
-	</section>
+	</div> 
 	
 
 <script src="main.js"></script>
