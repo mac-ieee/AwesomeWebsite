@@ -1,0 +1,53 @@
+/*HEADER*/
+header{
+	position: fixed;
+	top: 0;
+	z-index: 1400;
+	width: 100%;
+	height: 4.4rem;
+	background-color: rgba(0,0,0,.8);
+	background-filter: blur(2rem); /*slightly transparent*/
+}
+
+.nav-list{
+	width: 100%;
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-left: 25%;
+	margin-right: 25%;
+}
+
+.nav-list-mobile{
+	/*don't show menu on mobile*/
+	display: none;
+}
+
+.nav-link{
+	font-size: 1.4rem;
+	color: #d3d3d3;
+	padding: 0 1rem;
+	transition: 0.7s; /*hover effect on text*/
+}
+.nav-link:hover{
+	color: white;
+}
+
+.nav-link-apple{
+	width: 1.6rem;
+	height: 4.4rem;
+	background: url("images/icons/apple.svg") center no-repeat;
+}
+
+.nav-link-search{
+	width: 1.6rem;
+	height: 4.4rem;
+	background: url("images/icons/search.svg") center no-repeat;
+}
+
+.nav-link-bag{
+	width: 1.4rem;
+	height: 4.4rem;
+	background: url("images/icons/bag.svg") center no-repeat;
+}
